@@ -44,6 +44,7 @@ Every phase ends with a verification task. Any mismatch fails the run, so unveri
 ```
 flight-price-pipeline/
 ├── docker-compose.yaml
+|___ requirements.txt
 ├── .env.example                  copy to .env
 ├── data/                         put the CSV here (not committed)
 ├── docs/                         project report and screenshots
