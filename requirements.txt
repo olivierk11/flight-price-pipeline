@@ -1,0 +1,24 @@
+# Flight Price Analysis Pipeline - Python dependencies
+#
+# The Docker image apache/airflow:2.10.4-python3.11 already includes all of these,
+# so Docker installs nothing from this file. It documents the exact versions used
+# and supports a non-Docker install on Linux or WSL (Airflow does not run natively
+# on Windows). Versions match Airflow's official constraints for 2.10.4 / Python 3.11:
+#
+#   pip install -r requirements.txt \
+#     --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.10.4/constraints-3.11.txt"
+
+# Orchestration
+apache-airflow==2.10.4
+
+# Database providers (MySqlHook, PostgresHook)
+apache-airflow-providers-mysql==5.7.4
+apache-airflow-providers-postgres==5.14.0
+
+# Database drivers
+mysqlclient==2.2.6
+psycopg2-binary==2.9.10
+
+# Data processing
+pandas==2.1.4
+numpy==1.26.4
